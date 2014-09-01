@@ -6,9 +6,12 @@ Package.describe({
 
 Package.on_use(function (api) {
 	// famono will reject this otherwise
-	if (api.versionsFrom)
+	if (api.versionsFrom) {
 	  api.versionsFrom("METEOR@0.9.0");
-	api.use('raix:famono@0.7.4', 'client');
+		api.use('raix:famono@0.7.4', 'client');
+	} else {
+		api.use('famono', 'client');
+	}
 	api.add_files('test.js', 'client');
 });
 
