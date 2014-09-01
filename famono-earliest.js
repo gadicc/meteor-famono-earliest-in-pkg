@@ -15,7 +15,6 @@ if (Meteor.isClient) {
     }
   });
 
-  // Note, without this, package Meteor.startup won't work either
   //console.log('famous.core.Surface in app run (earliest)');
   //try { console.log(!!famous.core.Surface); } catch (err) { console.error(err); }
 }
